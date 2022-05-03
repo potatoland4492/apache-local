@@ -1,1 +1,55 @@
-
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Akhil Pillai">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>Error 404: Page Not Found</title>
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Source+Code+Pro&display=swap');
+			body {
+				font-family: 'Roboto', sans-serif;
+				font-size: 1.75em;
+				color: #000058;
+				background-color: #7acfcc;
+			}
+			main {
+				text-align: center;
+			}
+			h1 {
+				margin: 0;
+			}
+			p {
+				margin: 0.125em;
+			}
+			b {
+				font-weight: 700;
+			}
+			code {
+				font-family: 'Ubuntu Mono', 'Source Code Pro', monospace;
+				color: #000000;
+			}
+			img {
+				display: block;
+				margin: 0.25em;
+				margin-left: auto;
+				margin-right: auto;
+				height: 17.5em;
+			}
+		</style>
+		<link rel="icon" href="files/favicon.png" type="image/png">
+	</head>
+	<body>
+		<main>
+			<h1><b>Error</b> <code>404</code><b>:</b></h1>
+			<p>The requested URL <code id="path">/* path */</code> was not found on this server.</p>
+			<p>Why did that happen? ...Probably because our developers fell asleep.</p>
+		</main>
+		<img src="files/sleeping.png">
+		<script type="text/javascript">
+			document.getElementById('path').innerText = window.location.pathname + window.location.search;
+		</script>
+	</body>
+</html>
